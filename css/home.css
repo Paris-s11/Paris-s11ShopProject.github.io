@@ -1,0 +1,341 @@
+/*header part start*/
+/*links & signup bottom start*/
+header{
+font-size: 1em;
+}
+
+header nav{
+display: flex;
+justify-content: space-between;
+padding: 10px 15px;
+font-size: 1em;
+}
+
+header nav .rightnav{
+display: flex;
+align-items: center;
+}
+
+header nav .rightnav a{
+padding: 5px;
+margin: 10px 15px;
+color: rgb(63, 63, 63);
+}
+header nav .rightnav a:hover{
+    color: black;
+}
+
+header nav .leftnav{
+display: flex;
+align-items: center;
+padding: 10px;
+margin: 10px 15px;
+border: 1px solid black;
+border-radius: 10px;
+}
+header nav .leftnav:hover{background-color: rgb(161, 161, 161);
+border: 1px solid rgb(161, 161, 161) ;}
+
+header nav .leftnav a{
+color: black;
+font-size: 0.9em;
+font-weight: 600;
+padding: 10px;
+}
+
+header nav .leftnav i{
+color: rgb(63, 63, 63);
+padding: 5px;
+}
+/*links & signup bottom end*/
+
+/*picture slids start*/
+.slider{
+    position: relative;
+    font-size: 1em;
+
+}
+.slider .slides .item{
+    position: relative;
+    display: none;
+
+}
+.slider .slides .active{
+    display: block;
+    animation-name: fadeIn ;
+    animation-duration: 2s;
+}
+.slider .slides .item img{
+    width: 100%;
+    height: 700px;
+}
+@media screen and (max-width:600px){
+    .slider .slides .item img{
+        width: 100%;
+        height: 400px;}
+    .slider .slides .item span{
+        display: none;
+    }
+}
+.slider .slides .item span{
+    position: absolute;
+    z-index: 1;
+    top:30%;
+    right:5%;
+    font-size: 2.5em;
+    color: white;
+    font-weight: bold;
+
+}
+.slider .circle{
+    position: absolute;
+    bottom:5%;
+    left:3%;
+    z-index: 1;
+    font-size: 1.1em;
+    cursor: pointer;
+    color: white;
+}
+.slider .circle i{
+padding: 2px;
+}
+.slider .circle i:hover{
+    color: rgba(255, 255, 255, .4)
+}
+/*picture slids end*/
+/*header part end*/
+
+/*main products part start*/
+.products{
+    margin: 20px 15px;
+    font-size: 1em;
+}
+.products .cards{
+    text-align: center;
+    margin: 10px 15px;
+    padding: 10px;
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 10);
+}
+.cards .pic{
+    position: relative;
+}
+.cards .pic img{
+    width: 70%;
+}
+.cards .pic .offer{
+position: absolute;
+background-color:#786fa6;
+font-size: 0.9em;
+padding: 5px;
+right: 12%;
+top: 8%;
+cursor: pointer;
+
+}
+.cards .pic .star{
+    position: absolute;
+    left: 20%;
+    top:0%;
+    font-size: 0.9em;
+    cursor: pointer;
+
+}
+.cards .star i{
+    color: #ffb142;
+}
+.cards .pic .title{
+    color: rgb(58, 58, 58);
+}
+.cards .button{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15%;
+
+}
+.cards .button .left{
+    display: flex;
+    padding:5px 5px;
+}
+.cards .button .left .btn{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 7px;
+    background-color: #aaa69d;
+    border-radius: 5px;
+    padding:2px 5px;
+    cursor: pointer;
+    width: 40px;
+    transition: .75s;
+}
+.cards .button .left .btn:hover{
+    width: 100px;
+}
+
+.cards .button .left .btn a{
+    color: black;
+}
+.cards .button .left .btn .txt{
+    display: none;
+}
+.cards .button .left .btn:hover .txt{
+    display: block;
+}
+.cards .button .left .btn a i{
+    color: #2c2c54;
+    margin-left: 5px;
+
+}
+
+.cards .button .right span{
+     color: #524f49;
+     font-weight: bold;
+}
+/*main prudocts part end*/
+
+/*main super offer part start*/
+
+.super-offer-sec{
+    padding: 20px;
+    font-size: 1em;
+    margin-left: 5%;
+}
+.super-offer-box{
+    text-align: center;
+    box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, .2);
+    border-radius: 5px;
+    margin: 0px 10px;
+}
+.super-offer-box .title{
+ background-color: rgb(252, 110, 53);
+ font-weight: 500;
+ font-size: 1em;
+ padding: 5px 10px;
+ border-bottom-left-radius: 10px;
+ border-bottom-right-radius: 10px;
+ display:inline-block;
+ color: white;
+}
+.super-offer-box .body .product-img{
+    text-align: center;
+    padding: 0px 10px 30px 10px;
+}
+.super-offer-box .body .product-img img{
+    width: 70%;
+}
+.super-offer-box .body .introduction{
+    padding: 30px 10px;
+
+}
+.super-offer-box .body .introduction .pricerow{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+
+}
+.super-offer-box .body .introduction .pricerow .price{
+    font-size: 1.2em;
+    color: #696969;
+    font-weight: 500;
+
+}
+.super-offer-box .body .introduction .pricerow .offer{
+    font-size: 1em;
+    color: white;
+    background-color: rgb(252, 110, 53);
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding: 5px 10px;
+
+}
+.super-offer-box .body .introduction .name{
+    margin: 40px 10px;
+    font-size: 1.5em;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+.super-offer-box .body .introduction .countner{
+    border-top: 1px solid rgba(0, 0, 0, .2);
+    margin: 10px 40px;
+    padding: 20px;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: #696969;
+}
+
+.super-offer-box .body .introduction .text{
+    color: #696969;
+    font-size: 0.9em;
+}
+
+.banner{
+    margin-top: 7%;
+    margin-left: 10%;
+
+}
+.banner img{
+    width: 70%; 
+}
+
+@media screen and (max-width:1000px){
+    .banner{ display: none !important;}
+}
+/*main super offer part end*/
+
+/*footer part start*/
+footer{
+background-color: #888888;
+}
+.left{
+    padding: 40px;
+
+}
+.left .title{
+    padding-bottom: 30px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+.left .dec{
+    font-size: 1em;
+    color: white;
+}
+.right{
+    padding:40px 0px 0px 40px;
+   
+}
+.right .title{
+    font-size: 1em;
+    padding-left: 50px;
+    font-weight: bold;
+
+}
+.right .socia{
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+.socia a{
+cursor: pointer;
+}
+.socia a i{
+    color: white;
+    font-size: 1.5em;
+}
+.footer-under{
+    background-color: rgb(59, 59, 59);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.footer-under .terms{
+padding: 20px 20px 5px 20px; 
+    color: #202020;
+}
+.footer-under .rights{
+    padding: 5px 20px 20px 20px;
+    color: #202020;
+
+}

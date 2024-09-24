@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!--main head cods-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shope</title>
+<!--css links-->
+    <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/animate.css">
+    <link rel="stylesheet" href="./css/flexboxgrid.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<!--font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Exo+2:ital,wght@0,100..900;1,100..900&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Play:wght@400;700&family=Silkscreen:wght@400;700&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+<!--icon-->
+    <script src="https://kit.fontawesome.com/3576026199.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<!--header part start-->
+    <header>
+    <!--links & signup bottom start-->
+        <nav>
+            <div class="rightnav">
+                <a href="panel.html"><i class="fa-solid fa-user"></i></a>
+                <a href=""><i class="fa-solid fa-house"></i></a>
+                <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+            </div>
+            <div class="leftnav">
+                <a href="login.html">Sign in / Sign up</a>
+                <i class="fa-solid fa-user"></i>
+            </div>
+        </nav>
+    <!--links & signup bottom end-->
+
+    <!--picture slides start-->
+        <section class="slider">
+            <div class="slides">
+                <div class="item active " id="slide1">
+                    <img src="./img/2.jpeg" alt="">
+                    <span>All your favorit animes are here, <br>
+                        just search for it easly.</span>
+                </div>
+                <div class="item " id="slide2">
+                    <img src="./img/3.jpeg" alt="">
+                    <span style="color: black;">Buy everything with <br>
+                         the best price!</span>
+                </div>
+                <div class="item " id="slide3">
+                    <img src="./img/4.jpeg" alt="">
+                    <span>Have fun in your own page.</span>
+                </div>
+            </div>
+            <div class="circle">
+                <i onclick="setSlide('slide1' , 1)" class="fa-solid fa-circle"></i>
+                <i onclick="setSlide('slide2' , 2)" class="fa-solid fa-circle"></i>
+                <i onclick="setSlide('slide3' , 3)" class="fa-solid fa-circle"></i>
+            </div>
+        </section>
+    <!--picture slides end-->
+    </header>
+<!--header part end-->
+
+<!--main products part start-->
+<main>
+    <section class="products">
+        <div class="row">
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                <div class="cards">
+                    <div class="pic">
+                        <img src="./img/p1.jpeg" alt="">
+                        <span class="offer">Hot Offer</span>
+                        <div class="star">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="title">
+                        Name:Miss Hokusai
+                    </div>
+                    <div class="button">
+                        <div class="left">
+                           <div class="btn">
+                            <a class="txt" href="">Like</a>
+                            <a href=""><i class="fa-solid fa-heart"></i></a>
+                           </div>
+                           <div class="btn">
+                            <a class="txt" href="">Buy</a>
+                            <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                           </div>
+                        </div>
+                        <div class="right">
+                            <span class="price">19.99$</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                <div class="cards">
+                    <div class="pic">
+                        <img src="./img/p2.jpeg" alt="">
+                        <span class="offer">Hot Offer</span>
+                        <div class="star">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="title">
+                        Name:After The Rain
+                    </div>
+                    <div class="button">
+                        <div class="left">
+                           <div class="btn">
+                            <a class="txt" href="">Like</a>
+                            <a href=""><i class="fa-solid fa-heart"></i></a>
+                           </div>
+                           <div class="btn">
+                            <a class="txt" href="">Buy</a>
+                            <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                           </div>
+                        </div>
+                        <div class="right">
+                            <span class="price">24.99$</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                <div class="cards">
+                    <div class="pic">
+                        <img src="./img/p3.jpeg" alt="">
+                        <span class="offer">Hot Offer</span>
+                        <div class="star">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="title">
+                        Name:Cod Braker
+                    </div>
+                    <div class="button">
+                        <div class="left">
+                           <div class="btn">
+                            <a class="txt" href="">Like</a>
+                            <a href=""><i class="fa-solid fa-heart"></i></a>
+                           </div>
+                           <div class="btn">
+                            <a class="txt" href="">Buy</a>
+                            <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                           </div>
+                        </div>
+                        <div class="right">
+                            <span class="price">29.99$</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                <div class="cards">
+                    <div class="pic">
+                        <img src="./img/p4.jpeg" alt="">
+                        <span class="offer">Hot Offer</span>
+                        <div class="star">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="title">
+                        Name:Pirate Princec
+                    </div>
+                    <div class="button">
+                        <div class="left">
+                           <div class="btn">
+                            <a class="txt" href="">Like</a>
+                            <a href=""><i class="fa-solid fa-heart"></i></a>
+                           </div>
+                           <div class="btn">
+                            <a class="txt" href="">Buy</a>
+                            <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                           </div>
+                        </div>
+                        <div class="right">
+                            <span class="price">19.99$</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--main prudocts part end-->
+
+    <!--main super offer part start-->
+    <section class="super-offer-sec">
+        <div class="row">
+            <div class="col-lg-9 col-md-8 col-sm-12 col-xs-12">
+                <div class="super-offer-box">
+                    <span class="title">_Supper Offer_</span>
+                    <div class="body">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-5 col-sm-4 col-xs-12">
+                                <div class="product-img">
+                                    <img src="./img/pic.jpeg" alt="">
+                                </div>
+                            </div>
+                            <div class="col-lg-8 col-md-6 col-sm-8 col-xs-12">
+                                <div class="introduction">
+                                    <div class="pricerow">
+                                    <div class="price">21.99$</div>
+                                    <div class="offer">60% Off</div>
+                                    </div>
+                                    <div class="name">Jojutsu Kaisen</div>
+                                    <div class="countner">
+                                        <span id="hours">19</span> :
+                                        <span id="minutes">26</span> :
+                                        <span id="second">40</span>
+                                    </div>
+                                    <div class="text">-Time left to end of the super offer-</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-sm-12 ">
+                <div class="banner">
+                    <img src="./img/offer.jpeg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--main super offer part end-->
+
+    <!-- main dragable items part start-->
+    <section class="dragable-items">
+        <div class="owl-carousel owl-theme">
+            <div class="item">
+                <div class="cards">
+                <div class="pic">
+                    <img src="./img/J.jpeg" alt="">
+                    <span class="offer">Hot Offer</span>
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                </div>
+                <div class="title">
+                    Name:Miss Hokusai
+                </div>
+                <div class="button">
+                    <div class="left">
+                       <div class="btn">
+                        <a class="txt" href="">Like</a>
+                        <a href=""><i class="fa-solid fa-heart"></i></a>
+                       </div>
+                       <div class="btn">
+                        <a class="txt" href="">Buy</a>
+                        <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                       </div>
+                    </div>
+                    <div class="right">
+                        <span class="price">19.99$</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <div class="item">
+                <div class="cards">
+                    <div class="pic">
+                        <img src="./img/I.jpeg" alt="">
+                        <span class="offer">Hot Offer</span>
+                        <div class="star">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="title">
+                        Name:Miss Hokusai
+                    </div>
+                    <div class="button">
+                        <div class="left">
+                           <div class="btn">
+                            <a class="txt" href="">Like</a>
+                            <a href=""><i class="fa-solid fa-heart"></i></a>
+                           </div>
+                           <div class="btn">
+                            <a class="txt" href="">Buy</a>
+                            <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                           </div>
+                        </div>
+                        <div class="right">
+                            <span class="price">19.99$</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="cards">
+                    <div class="pic">
+                        <img src="./img/H.jpeg" alt="">
+                        <span class="offer">Hot Offer</span>
+                        <div class="star">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="title">
+                        Name:Miss Hokusai
+                    </div>
+                    <div class="button">
+                        <div class="left">
+                           <div class="btn">
+                            <a class="txt" href="">Like</a>
+                            <a href=""><i class="fa-solid fa-heart"></i></a>
+                           </div>
+                           <div class="btn">
+                            <a class="txt" href="">Buy</a>
+                            <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                           </div>
+                        </div>
+                        <div class="right">
+                            <span class="price">19.99$</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="cards">
+                    <div class="pic">
+                        <img src="./img/G.jpeg" alt="">
+                        <span class="offer">Hot Offer</span>
+                        <div class="star">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="title">
+                        Name:Miss Hokusai
+                    </div>
+                    <div class="button">
+                        <div class="left">
+                           <div class="btn">
+                            <a class="txt" href="">Like</a>
+                            <a href=""><i class="fa-solid fa-heart"></i></a>
+                           </div>
+                           <div class="btn">
+                            <a class="txt" href="">Buy</a>
+                            <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                           </div>
+                        </div>
+                        <div class="right">
+                            <span class="price">19.99$</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="cards">
+                    <div class="pic">
+                        <img src="./img/F.jpeg" alt="">
+                        <span class="offer">Hot Offer</span>
+                        <div class="star">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="title">
+                        Name:Miss Hokusai
+                    </div>
+                    <div class="button">
+                        <div class="left">
+                           <div class="btn">
+                            <a class="txt" href="">Like</a>
+                            <a href=""><i class="fa-solid fa-heart"></i></a>
+                           </div>
+                           <div class="btn">
+                            <a class="txt" href="">Buy</a>
+                            <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                           </div>
+                        </div>
+                        <div class="right">
+                            <span class="price">19.99$</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="cards">
+                    <div class="pic">
+                        <img src="./img/E.jpeg" alt="">
+                        <span class="offer">Hot Offer</span>
+                        <div class="star">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="title">
+                        Name:Miss Hokusai
+                    </div>
+                    <div class="button">
+                        <div class="left">
+                           <div class="btn">
+                            <a class="txt" href="">Like</a>
+                            <a href=""><i class="fa-solid fa-heart"></i></a>
+                           </div>
+                           <div class="btn">
+                            <a class="txt" href="">Buy</a>
+                            <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                           </div>
+                        </div>
+                        <div class="right">
+                            <span class="price">19.99$</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="cards">
+                    <div class="pic">
+                        <img src="./img/D.jpeg" alt="">
+                        <span class="offer">Hot Offer</span>
+                        <div class="star">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="title">
+                        Name:Miss Hokusai
+                    </div>
+                    <div class="button">
+                        <div class="left">
+                           <div class="btn">
+                            <a class="txt" href="">Like</a>
+                            <a href=""><i class="fa-solid fa-heart"></i></a>
+                           </div>
+                           <div class="btn">
+                            <a class="txt" href="">Buy</a>
+                            <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                           </div>
+                        </div>
+                        <div class="right">
+                            <span class="price">19.99$</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="cards">
+                    <div class="pic">
+                        <img src="./img/C.jpeg" alt="">
+                        <span class="offer">Hot Offer</span>
+                        <div class="star">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="title">
+                        Name:Miss Hokusai
+                    </div>
+                    <div class="button">
+                        <div class="left">
+                           <div class="btn">
+                            <a class="txt" href="">Like</a>
+                            <a href=""><i class="fa-solid fa-heart"></i></a>
+                           </div>
+                           <div class="btn">
+                            <a class="txt" href="">Buy</a>
+                            <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                           </div>
+                        </div>
+                        <div class="right">
+                            <span class="price">19.99$</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="cards">
+                    <div class="pic">
+                        <img src="./img/B.jpeg" alt="">
+                        <span class="offer">Hot Offer</span>
+                        <div class="star">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="title">
+                        Name:Miss Hokusai
+                    </div>
+                    <div class="button">
+                        <div class="left">
+                           <div class="btn">
+                            <a class="txt" href="">Like</a>
+                            <a href=""><i class="fa-solid fa-heart"></i></a>
+                           </div>
+                           <div class="btn">
+                            <a class="txt" href="">Buy</a>
+                            <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                           </div>
+                        </div>
+                        <div class="right">
+                            <span class="price">19.99$</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="cards">
+                    <div class="pic">
+                        <img src="./img/A.jpeg" alt="">
+                        <span class="offer">Hot Offer</span>
+                        <div class="star">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="title">
+                        Name:Miss Hokusai
+                    </div>
+                    <div class="button">
+                        <div class="left">
+                           <div class="btn">
+                            <a class="txt" href="">Like</a>
+                            <a href=""><i class="fa-solid fa-heart"></i></a>
+                           </div>
+                           <div class="btn">
+                            <a class="txt" href="">Buy</a>
+                            <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                           </div>
+                        </div>
+                        <div class="right">
+                            <span class="price">19.99$</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- main dragable items part end-->
+</main>
+<footer>
+    <div class="row">
+        <div class="col-lg-8">
+            <div class="left">
+                <div class="title">
+                    About US
+                </div>
+                <div class="dec">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque veritatis tempore numquam voluptatem minima cum quia quae est, <br>
+                  ea dolore repellendus. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur aspernatur suscipit, <br>
+                  sint distinctio deserunt ut tenetur exercitationem veniam quis libero?
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="right">
+                <div class="title">
+                    Contact & Social media
+                </div>
+                <div class="socia">
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+<div class="footer-under">
+        <span class="terms">Cookies / Privacy Policy / Terms & conditions</span>
+        <span class="rights">© 2024 Anime store Canada limited</span>
+</div>
+</footer>
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="./java/main.js"></script>
+
+
+<script>
+    $('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    responsiveClass:true,
+    responsive:{
+        0:{
+            items:1,
+            nav:true
+        },
+        600:{
+            items:3,
+            nav:false
+        },
+        1000:{
+            items:5,
+            nav:true,
+            loop:false
+        }
+    }
+})
+</script>
+</body>
+</html>

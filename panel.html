@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Panel</title>
+    <link rel="stylesheet" href="./css/panel.css">
+    <link rel="stylesheet" href="./css/flexboxgrid.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="https://kit.fontawesome.com/3576026199.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="panel" class="panel">
+                <div id="right">
+                    <section class="menue">
+                        <div class="user-info">
+                            <div class="img-name">
+                                <img src="./img/prof.jpg"  alt="">
+                                <span class="name">Hinata Hiuga</span>
+                                <i onclick="toggleUserDetails()" class="fas fa-angle-down"></i>
+                            </div>
+                            <div class="details">
+                                <div class="details-item">
+                                    <span>Access :</span>
+                                    <span>Admin</span>
+                                </div>
+                                <div class="details-item">
+                                    <span>Status :</span>
+                                    <span>Online</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-btns">
+                            <a class="item" href="">
+                                <i class="fa-solid fa-box-open"></i>
+                                <span>Products</span>
+                            </a>
+                            <a class="item" href="">
+                                <i class="fa-solid fa-truck-fast"></i>
+                                <span>Orders</span>
+                            </a>
+                            <a class="item item-active" href="">
+                                <i class="fa-solid fa-chart-line"></i>
+                                <span>Reports</span>
+                            </a>
+                            <a class="item" href="">
+                                <i class="fa-solid fa-headset"></i>
+                                <span>Support</span>
+                            </a>
+                            <a class="item" href="">
+                                <i class="fa-solid fa-users"></i>
+                                <span>Users</span>
+                            </a>
+                        </div>
+                    </section>
+        
+                </div>
+            
+            
+                <div id="left">
+                    <section class="main-box">
+                        <header>
+                            <nav>
+                                <div class="row">
+                                    <div class="col-lg-10">
+                                        <div class="rights">
+                                            <div class="search">
+                                                <i onclick="togglePanel()" class="fa-solid fa-bars"></i>
+                                                <input type="text">
+                                                <i class="fa-solid fa-magnifying-glass"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-2">
+                                        <div class="lefts">
+                                            <a href=""><i class="fa-solid fa-power-off"></i></a>
+                                            <a href=""><i class="fa-regular fa-bell"></i></a>
+                                            <a href="index.html"><i class="fa-solid fa-house"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </nav>
+                            <div class="header-bottom">
+                                <h3>Last entry 2 days ago</h3>
+                                <a href="">Frenc</a>
+                            </div>
+                        </header>
+                       <div class="main">
+                         <div class="chart-sec">
+                            <di class="row">
+                                <div class="col-lg-3">
+                                    <div class="cart">
+                                        <div class="right">
+                                            <i class="fa-solid fa-truck-fast"></i>
+                                        </div>
+                                       <div class="left">
+                                        <span>Orders</span>
+                                        <span>250</span>
+                                       </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                   <div class="cart">
+                                    <div class="right">
+                                        <i class="fa-solid fa-box-open"></i>
+                                    </div>
+                                   <div class="left">
+                                    <span>Products</span>
+                                    <span>400</span>
+                                   </div>
+                                   </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="cart">
+                                        <div class="right">
+                                            <i class="fa-solid fa-users"></i>
+                                        </div>
+                                       <div class="left">
+                                        <span>Users</span>
+                                        <span>50</span>
+                                       </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="cart">
+                                        <div class="right">
+                                            <i class="fa-solid fa-money-check-dollar"></i>
+                                        </div>
+                                       <div class="left">
+                                        <span>Payment</span>
+                                        <span>2,000,000 $</span>
+                                       </div>
+                                    </div>
+                                </div>
+                                
+                            </di>
+                            <div class="box">
+                                <div class="head">
+                                    <div class="right">
+                                       Incom
+                                    </div>
+                                    <div class="left">
+                                        <i class="fa-solid fa-gear"></i>
+                                        <i class="fa-solid fa-angle-left"></i>
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <img src="./img/chart.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                       </div>
+        
+                    </section>
+                </div>
+        
+    </div>
+
+
+    <script src="./java/panel.js"></script>
+</body>
+</html>
